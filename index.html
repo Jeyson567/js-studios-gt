@@ -3,51 +3,196 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>J&S Studios GT - Soluciones para tu negocio</title>
+  <title>J&S Studios GT - Soluciones Innovadoras para tu Negocio</title>
   <style>
+    :root {
+      --celeste: #87CEEB;
+      --negro: #000000;
+      --blanco: #FFFFFF;
+      --dorado: #D4AF37;
+    }
     body {
-      background-color: #87CEEB;
-      font-family: Arial, sans-serif;
-      color: #000;
-      text-align: center;
-      padding: 50px;
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--celeste);
+      color: var(--negro);
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      align-items: center;
+      padding: 20px;
     }
     header {
-      background-color: #D4AF37;
-      color: white;
-      padding: 20px;
-      font-size: 2.5rem;
-      font-weight: bold;
-      margin-bottom: 30px;
+      background-color: var(--dorado);
+      color: var(--blanco);
+      width: 100%;
+      max-width: 900px;
+      padding: 20px 20px 30px 20px;
+      text-align: center;
+      border-radius: 8px;
+      margin-bottom: 40px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+    header img {
+      max-width: 250px;
+      height: auto;
+      user-select: none;
+    }
+    header h1 {
+      font-size: 2.8rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin: 0;
     }
     main {
-      background-color: white;
-      padding: 30px;
+      background-color: var(--blanco);
+      max-width: 900px;
+      padding: 40px 50px;
       border-radius: 15px;
-      max-width: 600px;
-      margin: 0 auto;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      color: var(--negro);
+      line-height: 1.6;
+      text-align: justify;
     }
-    button {
-      background-color: #D4AF37;
-      border: none;
-      padding: 15px 30px;
-      font-size: 1.2rem;
-      color: black;
+    h2 {
+      color: var(--dorado);
+      font-size: 2.5rem;
+      margin-bottom: 25px;
+      border-bottom: 4px solid var(--dorado);
+      padding-bottom: 10px;
+    }
+    h3 {
+      color: var(--dorado);
+      margin-top: 30px;
+      margin-bottom: 15px;
+      font-weight: 700;
+      font-size: 1.8rem;
+    }
+    p {
+      font-size: 1.15rem;
+      margin-bottom: 20px;
+    }
+    ul {
+      margin-left: 25px;
+      margin-bottom: 25px;
+      font-size: 1.15rem;
+    }
+    ul li {
+      margin-bottom: 10px;
+    }
+    .contacto {
+      background-color: var(--negro);
+      color: var(--blanco);
+      padding: 25px 20px;
+      font-size: 1.8rem;
+      font-weight: 700;
+      border-radius: 10px;
+      margin-top: 40px;
       cursor: pointer;
-      border-radius: 5px;
-      margin-top: 20px;
+      transition: background-color 0.3s ease;
+      user-select: all;
+      text-align: center;
+      max-width: 400px;
+      margin-left: auto;
+      margin-right: auto;
     }
-    button:hover {
-      background-color: #b88f25;
+    .contacto:hover {
+      background-color: var(--dorado);
+      color: var(--negro);
+    }
+    footer {
+      margin-top: 50px;
+      font-size: 1rem;
+      color: var(--negro);
+      max-width: 900px;
+      text-align: center;
+      padding-bottom: 20px;
+    }
+    @media (max-width: 700px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      header img {
+        max-width: 180px;
+      }
+      main {
+        padding: 25px 20px;
+        border-radius: 10px;
+      }
+      h2 {
+        font-size: 2rem;
+      }
+      h3 {
+        font-size: 1.5rem;
+      }
+      p, ul {
+        font-size: 1rem;
+      }
+      .contacto {
+        font-size: 1.4rem;
+        padding: 20px 15px;
+      }
     }
   </style>
 </head>
 <body>
-  <header>Bienvenidos a J&S Studios GT</header>
+  <header>
+    <img src="D2397340-659A-4D85-BF4A-FE77DF491DE6.png" alt="Logo J&S Studios GT" />
+    <h1>Bienvenidos a J&S Studios GT</h1>
+  </header>
   <main>
-    <p>Ofrecemos soluciones para tus negocios y emprendimientos: contenido, ediciones para marketing, inventarios básicos, contratos automatizados, menús de restaurante, ¡y más!</p>
-    <p>Contáctanos al: <strong>+502 4860-8447</strong></p>
-    <button onclick="alert('¡Gracias por contactarnos!')">Contáctanos</button>
+    <h2>Tu socio estratégico para crecer y destacar</h2>
+    <p>
+      En <strong>J&S Studios GT</strong> entendemos que el mundo digital y la gestión eficiente son claves para el éxito de cualquier emprendimiento o negocio. Por eso, ofrecemos soluciones integrales diseñadas para que tu marca no solo crezca, sino que brille con luz propia en un mercado competitivo.
+    </p>
+    <h3>¿Por qué elegirnos?</h3>
+    <ul>
+      <li><strong>Creatividad sin límites:</strong> Contenido y ediciones de alta calidad que capturan la atención y generan conexión real con tus clientes.</li>
+      <li><strong>Automatización inteligente:</strong> Contratos y procesos automatizados para que dediques más tiempo a hacer crecer tu negocio y menos en papeleo.</li>
+      <li><strong>Gestión eficiente:</strong> Inventarios básicos y menús de restaurante diseñados para facilitar tu operación diaria y mejorar la experiencia de tus clientes.</li>
+      <li><strong>Atención personalizada:</strong> Nos involucramos en tus proyectos para entender tus necesidades y ofrecerte soluciones a la medida.</li>
+    </ul>
+    <h3>Servicios que transforman tu negocio</h3>
+    <p>
+      Nuestro portafolio abarca desde la creación de contenido digital hasta el diseño de sistemas simples que potencian tu productividad. Algunos de nuestros servicios estrella:
+    </p>
+    <ul>
+      <li><strong>Contenido y edición para marketing:</strong> Videos, imágenes, y materiales impactantes para redes sociales y campañas digitales.</li>
+      <li><strong>Contratos automatizados:</strong> Plantillas y sistemas que facilitan la gestión legal y administrativa.</li>
+      <li><strong>Inventarios básicos:</strong> Herramientas para llevar control efectivo de tus productos o insumos.</li>
+      <li><strong>Menús para restaurantes:</strong> Diseños atractivos y funcionales que mejoran la experiencia gastronómica de tus clientes.</li>
+    </ul>
+    <p>
+      Cada servicio es adaptado a tus necesidades para maximizar resultados y minimizar complicaciones.
+    </p>
+    <h3>¿Listo para dar el siguiente paso?</h3>
+    <p>
+      Estamos aquí para acompañarte en cada etapa de tu crecimiento. No importa el tamaño de tu negocio, en <strong>J&S Studios GT</strong> te ofrecemos soluciones innovadoras, prácticas y accesibles.
+    </p>
+    <p>
+      ¡No esperes más para transformar tus ideas en éxitos concretos!
+    </p>
+    <div class="contacto" onclick="copiarTelefono()" title="Haz clic para copiar el número">
+      📞 Contáctanos: +502 4860-8447
+    </div>
   </main>
+  <footer>
+    &copy; 2025 J&S Studios GT - Todos los derechos reservados
+  </footer>
+  <script>
+    function copiarTelefono() {
+      const telefono = '+502 4860-8447';
+      navigator.clipboard.writeText(telefono).then(() => {
+        alert('Número copiado: ' + telefono);
+      }, () => {
+        alert('No se pudo copiar. Por favor cópialo manualmente: ' + telefono);
+      });
+    }
+  </script>
 </body>
 </html>
