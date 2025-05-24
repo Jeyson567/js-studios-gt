@@ -41,11 +41,23 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        color: white;
-        text-shadow: 0 0 10px rgba(0,0,0,0.7);
         font-size: 2.5rem;
         font-weight: bold;
         font-family: 'Georgia', serif;
+        position: relative;
+        color: white;
+        text-shadow: 0 0 10px rgba(0,0,0,0.7);
+    }
+    .hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-color: rgba(0,0,0,0.4);
+        z-index: 0;
+    }
+    .hero > * {
+        position: relative;
+        z-index: 1;
     }
     main {
         max-width: 1200px;
@@ -84,8 +96,9 @@
         object-fit: cover;
         display: block;
     }
-    .property-card:nth-child(1) .property-img img {
-        object-position: center 75%;
+    .property-img iframe {
+        width: 100%;
+        border-radius: 0 0 8px 8px;
     }
     .property-details {
         padding: 15px;
@@ -184,10 +197,8 @@
         font-size: 0.9rem;
     }
     iframe {
-        width: 100%;
-        height: 350px;
-        border: 0;
-        border-radius: 8px;
+        height: 300px;
+        border-radius: 0 0 8px 8px;
     }
     @media (max-width: 600px) {
         nav {
@@ -205,6 +216,9 @@
         .contact-button {
             width: 80%;
             justify-content: center;
+        }
+        iframe {
+            height: 200px;
         }
     }
 </style>
@@ -234,7 +248,7 @@
         <div class="properties-grid">
             <article class="property-card">
                 <div class="property-img">
-                    <img src="https://i.imgur.com/zu4v5KN.jpg" alt="Casa 1 en venta" />
+                    <img src="https://i.imgur.com/zu4v5KN.jpg" alt="Casa 1 en venta" loading="lazy" />
                 </div>
                 <div class="property-details">
                     <h3>Casa 1</h3>
@@ -251,7 +265,17 @@
             </article>
             <article class="property-card">
                 <div class="property-img">
-                    <img src="https://i.imgur.com/EzY8Q54.jpg" alt="Casa 2 en venta" />
+                    <img src="https://i.imgur.com/EzY8Q54.jpg" alt="Casa 2 en venta" loading="lazy" />
+                </div>
+                <div class="property-img" style="margin-top: 10px;">
+                    <iframe
+                        src="https://imgur.com/2ayehfU/embed"
+                        width="100%"
+                        height="300"
+                        frameborder="0"
+                        scrolling="no"
+                        allowfullscreen>
+                    </iframe>
                 </div>
                 <div class="property-details">
                     <h3>Casa 2</h3>
@@ -274,7 +298,7 @@
         <div class="properties-grid">
             <article class="property-card">
                 <div class="property-img">
-                    <img src="https://i.imgur.com/zu4v5KN.jpg" alt="Casa 1 en alquiler" />
+                    <img src="https://i.imgur.com/zu4v5KN.jpg" alt="Casa 1 en alquiler" loading="lazy" />
                 </div>
                 <div class="property-details">
                     <h3>Casa 1</h3>
@@ -288,7 +312,7 @@
             </article>
             <article class="property-card">
                 <div class="property-img">
-                    <img src="https://i.imgur.com/EzY8Q54.jpg" alt="Casa 2 en alquiler" />
+                    <img src="https://i.imgur.com/EzY8Q54.jpg" alt="Casa 2 en alquiler" loading="lazy" />
                 </div>
                 <div class="property-details">
                     <h3>Casa 2</h3>
