@@ -211,6 +211,31 @@
         height: 180px;
       }
     }
+    /* Nueva sección Lotificación con video e imagen */
+    #lotificacion {
+      margin-bottom: 50px;
+    }
+    #lotificacion .content-wrapper {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+    #lotificacion .content-wrapper > div {
+      flex: 1 1 350px;
+      max-width: 600px;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+    #lotificacion video, 
+    #lotificacion img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+    }
 </style>
 <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
@@ -224,7 +249,6 @@
 <nav>
     <a href="#video-presentacion">Presentación</a>
     <a href="#venta">Casas en Venta</a>
-    <a href="#alquiler">Casas en Alquiler</a>
     <a href="#lotificacion">Lotificación</a>
     <a href="#contacto">Contacto</a>
 </nav>
@@ -289,53 +313,19 @@
       </div>
   </section>
 
-  <section id="alquiler">
-      <h2>Casas en Alquiler</h2>
-      <div class="properties-grid">
-          <article class="property-card">
-              <div class="property-img">
-                  <img src="https://i.imgur.com/rzjvGkm.jpg" alt="Casa 1 en alquiler" />
-              </div>
-              <div class="property-details">
-                  <h3>Casa 1</h3>
-                  <ul>
-                      <li><strong>Terreno:</strong> 600 metros cuadrados</li>
-                      <li><strong>Incluye:</strong> Agua (posible cobro mensual al ser comprada)</li>
-                  </ul>
-                  <p class="price">Alquiler mensual: Q2,500</p>
-                  <a href="#contacto" class="btn">Solicitar Información</a>
-              </div>
-          </article>
-          <article class="property-card">
-              <div class="property-img">
-                  <img src="https://i.imgur.com/NwOTFSO.jpg" alt="Casa 2 en alquiler" />
-              </div>
-              <div class="property-details">
-                  <h3>Casa 2</h3>
-                  <ul>
-                      <li><strong>Terreno:</strong> 450 metros cuadrados</li>
-                      <li><strong>Incluye:</strong> Agua (posible cobro mensual al ser comprada)</li>
-                  </ul>
-                  <p class="price">Alquiler mensual: Q2,000</p>
-                  <a href="#contacto" class="btn">Solicitar Información</a>
-              </div>
-          </article>
-      </div>
-  </section>
-
   <section id="lotificacion">
-      <h2>Lotificación</h2>
-      <p>La lotificación es el proceso de dividir un terreno grande en lotes o parcelas más pequeñas que pueden ser vendidas o desarrolladas individualmente. Es una práctica común para urbanizar áreas y crear comunidades residenciales organizadas.</p>
-      <p><strong>Datos de lotificación:</strong></p>
-      <ul>
-          <li><strong>Área total:</strong> Por definir</li>
-          <li><strong>Número de lotes:</strong> Por definir</li>
-          <li><strong>Tamaño promedio de lote:</strong> Por definir</li>
-          <li><strong>Servicios incluidos:</strong> Agua potable, electricidad, calles pavimentadas (pendiente confirmar)</li>
-          <li><strong>Ubicación:</strong> Por definir</li>
-          <li><strong>Precio por lote:</strong> Por definir</li>
-      </ul>
-      <p>Para más detalles o cotizaciones personalizadas, contáctanos.</p>
+    <h2>Lotificación</h2>
+    <div class="content-wrapper">
+      <div>
+        <video autoplay muted loop playsinline>
+          <source src="https://i.imgur.com/ckqt8kt.mp4" type="video/mp4" />
+          Tu navegador no soporta la reproducción de video.
+        </video>
+      </div>
+      <div>
+        <img src="https://i.imgur.com/3WHTFcX.jpg" alt="Imagen Lotificación" />
+      </div>
+    </div>
   </section>
 
   <section id="contacto">
